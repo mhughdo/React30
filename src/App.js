@@ -21,13 +21,13 @@ class App extends React.Component {
     }
 
     componentWillUnmount() {
-        this.unsubscribeFromAuth = null
+        this.unsubscribeFromAuth()
     }
 
     render() {
         return (
             <div>
-                <Header />
+                <Header currentUser={this.state.currentUser} />
                 <Switch>
                     <Route exact path='/' component={HomePage} />
                     <Route exact path='/shop' component={ShopPage} />
