@@ -19,9 +19,9 @@ class App extends React.Component {
     componentDidMount() {
         const {setCurrentUser} = this.props
         this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+            console.log(userAuth)
             if (userAuth) {
                 const userRef = await createUserProfileDocument(userAuth)
-
                 userRef.onSnapshot(snapShot => {
                     setCurrentUser({
                         currentUser: {
