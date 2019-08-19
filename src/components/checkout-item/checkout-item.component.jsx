@@ -1,10 +1,13 @@
 import React, {useContext} from 'react'
+
+import {CartContext} from '../../providers/cart/cart.provider'
+
 import './checkout-item.styles.scss'
-import {CartContext} from '../../context/providers/cart/cart.provider'
 
 const CheckoutItem = ({cartItem}) => {
     const {name, imageUrl, price, quantity} = cartItem
     const {addItem, removeItem, clearItemFromCart} = useContext(CartContext)
+
     return (
         <div className='checkout-item'>
             <div className='image-container'>

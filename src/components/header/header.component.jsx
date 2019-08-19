@@ -1,11 +1,13 @@
 import React, {useContext, useState} from 'react'
 import {Link} from 'react-router-dom'
+
 import {auth} from '../../firebase/firebase.utils'
 import CartIcon from '../cart-icon/cart-icon.component'
 import CartDropdown from '../cart-dropdown/cart-dropdown.component'
+import CurrentUserContext from '../../contexts/current-user/current-user.context'
+import {CartContext} from '../../providers/cart/cart.provider'
+
 import {ReactComponent as Logo} from '../../assets/crown.svg'
-import CurrentUserContext from '../../context/current-user/current-user.context'
-import {CartContext} from '../../context/providers/cart/cart.provider'
 
 import './header.styles.scss'
 

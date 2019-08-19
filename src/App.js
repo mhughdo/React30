@@ -11,11 +11,16 @@ import CheckoutPage from './pages/checkout/checkout.component'
 import Header from './components/header/header.component'
 
 import {auth, createUserProfileDocument} from './firebase/firebase.utils'
-import CurrentUserContext from './context/current-user/current-user.context'
+
+import CurrentUserContext from './contexts/current-user/current-user.context'
 
 class App extends React.Component {
-    state = {
-        currentUser: null,
+    constructor() {
+        super()
+
+        this.state = {
+            currentUser: null,
+        }
     }
 
     unsubscribeFromAuth = null
@@ -44,10 +49,9 @@ class App extends React.Component {
     }
 
     render() {
-        const {currentUser} = this.state
         return (
             <div>
-                <CurrentUserContext.Provider value={currentUser}>
+                <CurrentUserContext.Provider value={this.state.currentUser}>
                     <Header />
                 </CurrentUserContext.Provider>
                 <Switch>
