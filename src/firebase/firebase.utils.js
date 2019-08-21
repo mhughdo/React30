@@ -3,13 +3,13 @@ import 'firebase/firestore'
 import 'firebase/auth'
 
 const config = {
-    apiKey: 'AIzaSyDtciQXj-Cw9CftMd6jcE0NXrtlNVOtk-8',
-    authDomain: 'react30-9ebe0.firebaseapp.com',
-    databaseURL: 'https://react30-9ebe0.firebaseio.com',
-    projectId: 'react30-9ebe0',
-    storageBucket: 'react30-9ebe0.appspot.com',
-    messagingSenderId: '146597253385',
-    appId: '1:146597253385:web:645ece10fd246b02',
+    apiKey: 'AIzaSyCdHT-AYHXjF7wOrfAchX4PIm3cSj5tn14',
+    authDomain: 'crwn-db.firebaseapp.com',
+    databaseURL: 'https://crwn-db.firebaseio.com',
+    projectId: 'crwn-db',
+    storageBucket: 'crwn-db.appspot.com',
+    messagingSenderId: '850995411664',
+    appId: '1:850995411664:web:7ddc01d597846f65',
 }
 
 firebase.initializeApp(config)

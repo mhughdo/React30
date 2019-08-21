@@ -1,5 +1,4 @@
 import React from 'react'
-
 import {Query} from 'react-apollo'
 import {gql} from 'apollo-boost'
 
@@ -16,7 +15,7 @@ const GET_COLLECTION_BY_TITLE = gql`
                 name
                 price
                 imageUrl
-            } 
+            }
         }
     }
 `
